@@ -1,0 +1,15 @@
+{
+  "name": "data_structures_and_algorithms",
+  "version": "1.0.0",
+  "description": "My attempt at data structures and algorithms",
+  "main": "index.js",
+  "repository": "git@github.com:benfixit/data_structures_and_algorithms.git",
+  "author": "Chukwuemeka Inya <inyachukwuemeka1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js src/"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  }
+}

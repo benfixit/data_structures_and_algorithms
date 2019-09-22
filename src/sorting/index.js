@@ -7,7 +7,7 @@ function CArray(numElements){
     this.swap = swap;
     this.toString = toString;
     this.setData = setData;
-    // this.bubbleSort = bubbleSort;
+    this.gaps = [5, 3, 1];
 
     for(let i = 0; i < numElements; ++i){
         this.dataStore[i] = i;
