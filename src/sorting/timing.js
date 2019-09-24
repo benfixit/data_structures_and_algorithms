@@ -3,8 +3,10 @@ const bubbleSort = require('./bubble');
 const selectionSort = require('./selection');
 const insertionSort = require('./insertion');
 const shellSort = require('./shell');
+const mergeSort = require('./merge');
+const quickSort = require('./quick');
 
-const numElements = 100000;
+const numElements = 1000;
 let testData = new newArray(numElements);
 testData.setData();
 console.log('Starting Bubble Sort');
@@ -37,3 +39,17 @@ start = new Date().getTime();
 shellSort.shellSort2.call(testData);
 stop = new Date().getTime();
 console.log('Ending Shell Sort with hard-coded sequence: It took: ', (stop - start), 'milliseconds');
+
+let data;
+console.log('Starting Merge Sort');
+start = new Date().getTime();
+data = mergeSort(testData.dataStore);
+stop = new Date().getTime();
+console.log('Ending Merge Sort: It took: ', (stop - start), 'milliseconds');
+
+console.log('Starting Quick Sort');
+start = new Date().getTime();
+data = quickSort(testData.dataStore);
+stop = new Date().getTime();
+console.log(data);
+console.log('Ending Quick Sort: It took: ', (stop - start), 'milliseconds');
